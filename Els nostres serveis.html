@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>La Panaderia (Els nostres serveis)</title>
+		<style>
+    	/* Estilos generales */
+    	body {
+        	font-family: Arial, sans-serif;
+        	background-color: #E6B0AA ;
+        	margin: 0;
+        	padding: 15px; /* Reducido padding */
+    	}
+    	h1 {
+        	color: #E6B0AA ;
+        	text-align: center;
+            font-size: 45px; /* Reducido tamaño de fuente */
+    	}
+		h2 {
+        	color:#E6B0AA;
+        	text-align: center;
+            font-size: 30px; /* Reducido tamaño de fuente */
+    	}
+		h3 {
+        	color:#E6B0AA;
+        	text-align: center;
+            font-size: 30px; /* Reducido tamaño de fuente */
+    	}
+		h4 {
+        	color:  #E6B0AA ;
+        	text-align: center;
+            font-size: 16px; /* Reducido tamaño de fuente */
+    	}
+    	p {
+        	color:#E6B0AA ;
+        	line-height: 1.6;
+            font-size: 16px; /* Reducido tamaño de fuente */
+            color: darkgray;
+    	}
+
+		/* Contenedor grid */
+		.container {
+        	display: grid;
+        	grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        	gap: 5px; /* Espacio entre los elementos */
+    	}
+
+		/* Estilo para las celdas */
+		.celda {
+        	background-color: #7B241C; /* Color de fondo */
+        	padding: 8px; /* Reducido padding */
+        	text-align: center; /* Centrado de texto */
+        	border: 1px solid #ddd; /* Vora fina gris */
+    	}
+
+        .encabezado {
+        	background-color: #7B241C; 
+        	grid-column: 2/4;
+        	grid-row: 1/2;
+        	padding: 8px; /* Reducido padding */
+        	text-align: center;
+        	border: 1px solid #ddd;
+        }
+        
+        .azul {
+        	background-color: #7B241C; 
+        	grid-column: 1/2;
+        	grid-row: 1/4;
+        	padding: 0; /* Elimina el espacio interno para que ocupe todo el área */
+        	text-align: center;
+        	border: 1px solid #ddd;
+        }
+        
+        .amarillo {
+        	background-color: #7B241C; 
+        	grid-column: 4/5;
+        	grid-row: 2/4;
+        	padding: 0; /* Elimina el espacio interno para que ocupe todo el área */
+        	text-align: center;
+        	border: 1px solid #ddd;
+        }
+
+        /* Ajustar las imágenes a su contenedor */
+        .azul img, .celda img, .amarillo img {
+        	width: 100%; /* Ocupa el 100% del ancho */
+        	height: 100%; /* Ocupa el 100% de la altura */
+        	object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsión */
+        }
+    	
+	</style>
+	</head>
+	<body>
+	
+	<div class="container">
+    	<div class="azul"><img src="pan.jpg" alt="Pan" /></div>
+    	<div class="encabezado">Columna 2</div>
+        <div class="encabezado"><h1>Els nostres serveis</h1></div>
+        <div class="celda"><img src="pan.jpg" alt="Pan" /></div>
+        <div class="azul">Columna 5</div>
+        <div class="celda"><h3>A la Panaderiaeria oferim una gran varietat de productes i serveis per satisfer tots els teus gustos:</h3></div>
+        <div class="celda"><h3>Pa artesà fresc: Pa fet a mà cada dia, amb les millors farines i ingredients locals. Brioixeria casolana: Croissants, ensaïmades, panets de xocolata, magdalenes i altres dolços que et faran venir a veure'ns cada matí.</h3></div>
+        <div class="amarillo">Columna 8</div> 
+    	<div class="azul"><img src="panes.jpg" alt="Panes" /></div>
+        <div class="celda"><h3>Pastissos a mida: T’oferim pastissos personalitzats per a totes les teves celebracions, des d’aniversaris fins a casaments, fets amb molt d’amor.</h2></div>
+        <div class="celda"><h3>Comandes per emportar: Fes la teva comanda en línia i passa a recollir-la quan més et convingui. Servei per esdeveniments: Si tens una festa, reunió o qualsevol esdeveniment, podem oferir-te un catering amb una selecció de pans, brioixeria i pastissos.</h3></div>
+        <div class="amarillo"><img src="2.jpg" alt="Imagen de producto" /></div>
+	</div>
+		
+	</body>
+</html>
